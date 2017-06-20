@@ -24,7 +24,7 @@ gem 'jquery-rails'
 
 gem 'whenever', require:false
 gem 'slack-api'
-gem 'dotenv'
+gem 'dotenv-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
