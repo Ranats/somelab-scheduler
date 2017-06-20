@@ -73,7 +73,8 @@ class SchedulesController < ApplicationController
     nxt = now.beginning_of_week(:thursday).since(1.week)
 #    p now.next_week(:thursday).strftime("%Y-%m-%d")
 
-    @schedule = Schedule.find_by(date:nxt.strftime("%Y-%m-%d"))
+    MySlack.post
+
   end
 
   private
